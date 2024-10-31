@@ -4,7 +4,7 @@ import 'package:agenda_flutter/listagem.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_masked_text2/flutter_masked_text2.dart';
 
-class Cadastro extends StatefulWidget {
+class Cadastro extends StatelessWidget {
   final ContatosRepository contatos;
   final Contato? contato;
 

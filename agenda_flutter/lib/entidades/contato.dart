@@ -43,7 +43,7 @@ class Contato {
       'nome': _nome,
       'telefone': _telefone,
       'email': _email,
-    
+    };
 
     if (_id != null && _id! > 0) {
       map['id'] = _id as String;
