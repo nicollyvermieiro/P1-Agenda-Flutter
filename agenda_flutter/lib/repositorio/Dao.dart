@@ -1,5 +1,5 @@
 import 'package:agenda_flutter/listagem.dart';
-import 'package:agenda_flutter/repositorio/interfaceDao';
+import 'package:agenda_flutter/repositorio/interfaceDao.dart';
 
 class Dao implements InterfaceDao {
   final List<Contato> _dados = [];

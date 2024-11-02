@@ -1,6 +1,6 @@
 import 'package:agenda_flutter/listagem.dart';
 import 'package:agenda_flutter/repositorio/DaoSqLite.dart';
-import 'package:agenda_flutter/repositorio/interfaceDao';
+import 'package:agenda_flutter/repositorio/interfaceDao.dart';
 
 class PessoaController {
   final InterfaceDao _dao = DaoSqLite() as InterfaceDao;

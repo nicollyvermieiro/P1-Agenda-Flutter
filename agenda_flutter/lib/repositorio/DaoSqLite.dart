@@ -1,5 +1,5 @@
-import 'package:agenda_flutter/Entidade/contato.dart';
-import 'package:agenda_flutter/repositorio/interfaceDao';
+import 'package:agenda_flutter/entidades/contato.dart';
+import 'package:agenda_flutter/repositorio/interfaceDao.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 
