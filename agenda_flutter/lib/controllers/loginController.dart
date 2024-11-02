@@ -1,12 +1,11 @@
 import 'package:agenda_flutter/repositorio/DaoSqLite.dart';
-import 'package:agenda_flutter/repositorio/interfaceDao.dart';
-import 'package:agenda_flutter/autenticacao/secureSession.dart'; 
+import 'package:agenda_flutter/autenticacao/secureStorage.dart'; 
 
 import '../entidades/usuario.dart';
 
 class Logincontroller {
   final DaoSqLite _dao = DaoSqLite();
-  final SecureSession _session = SecureSession(); 
+  final SecureStorage _session = SecureStorage(); 
 
   Future<int> salvar(String nome, String senha) {
     Usuario login = Usuario(nome: nome, senha: senha);
@@ -16,7 +15,7 @@ class Logincontroller {
   Future<bool> login(String nome, String senha) async {
     bool success = await _dao.login(nome, senha);
     if (success) {
-      await _session.salvarToken(nome); // Agora usando secure storage
+      await _session.salvarToken(nome); 
       return true;
     }
     return false;
